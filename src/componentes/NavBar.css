@@ -1,0 +1,23 @@
+ ul   {
+    color:black;
+    display: flex;
+    background-color: orange;
+    font-size: large;
+    margin: auto;
+    list-style: none;
+    font-weight: bolder;
+    
+
+}
+
+li a {
+    color: black;
+    text-align:end;
+    display: flex;
+    margin: 30px;
+}
+ 
+img {
+    height:60px;
+
+}
