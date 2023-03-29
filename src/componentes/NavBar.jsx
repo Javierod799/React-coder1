@@ -2,32 +2,38 @@ import "./NavBar.css";
 import "./CartWidget";
 import CartWidget from "./CartWidget";
 
-function NavBar(){
-    return (
-   <nav>
-        <ul>
-            <li>
+import { Link } from "react-router-dom";
+
+function NavBar() {
+  return (
+    <nav>
+      <ul>
+        <Link to="/">
+        <li>
                 <a href="">
                     <img src="/imgs/logo.jpg" alt="" />
                 </a>
             </li>
-            <li>
-                <a href="">Nosotros</a>
-            </li>
-            <li>
-                <a href="">Tienda</a>
-            </li>
-            <li>
-                <a href="/">Contacto</a>
-            </li>
-            <li>
+        </Link>
+
+        <li>
+          <Link to="/">Inicio</Link>
+        </li>
+        <li>
+          <Link to="/category/Dogpro">Dogpro</Link>
+        </li>
+        <li>
+          <Link to="/category/CanActive">Can Active</Link>
+        </li>
+        <li>
+          <Link to="/category/4Huellas">4 Huellas</Link>
+        </li>
+        <li>
                 <a><CartWidget /></a>
             </li>
-        </ul>
-        </nav> 
-        )
-    
+      </ul>
+    </nav>
+  );
 }
-
 
 export default NavBar;
